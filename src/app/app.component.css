@@ -1,3 +1,25 @@
 .main {
     background-color: rgb(34, 172, 252);
+    background-image: url("https://hdqwalls.com/wallpapers/altered-carbon-netflix-tv-series-2018-5c.jpg");
+    height: 500px;
+    width: 100%;
+    background-size: contain;
+}
+.netflix {
+     width: 20%;
+     height:75px;
+     margin-left: 2%;
+     margin-top:2%;
+     
+}
+.right{
+   float: right;
+   margin-right: 2%;
+   margin-top:2%;
+   
+
+}
+.newmovies{
+    margin-left: 10%;
+    margin-top:10%;
 }
