@@ -23,3 +23,26 @@
     margin-left: 10%;
     margin-top:10%;
 }
+
+/*  */
+
+.middle{
+    background:black;
+    width:100%;
+    height:300px;
+}
+
+.icon{
+    height: 7%;
+    width:7%;
+    margin-top:2%;
+    margin-left: 20%;
+}
+.text{
+
+    height: 10%;
+    width:10%;
+    margin-top:2%;
+    margin-left: 22%;
+}
+
