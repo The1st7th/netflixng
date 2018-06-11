@@ -33,16 +33,23 @@
 }
 
 .icon{
-    height: 7%;
-    width:7%;
-    margin-top:2%;
-    margin-left: 20%;
+    height: 30%;
+    width:20%;
+    margin-top:5%;
+    margin-left: 30%;
 }
 .text{
 
     height: 10%;
-    width:10%;
-    margin-top:2%;
+    width:100%;
+    margin-top:10%;
     margin-left: 22%;
 }
 
+.container {
+    display: flex;
+    background:black;
+  }
+  .container > div {
+    flex: 1; 
+  }
