@@ -44,12 +44,33 @@
     width:100%;
     margin-top:10%;
     margin-left: 22%;
+    margin-bottom:20%;
 }
 
 .container {
     display: flex;
     background:black;
+    width: 100%;
+    justify-content: space-between;
+  
   }
   .container > div {
     flex: 1; 
+  }
+
+  .selected{
+      font-weight: bold;
+      border-bottom: 5px solid red;
+  }
+
+  span{
+      display:inline-block;
+      
+      width: 70%;
+  }
+  .h6{
+      padding-bottom: 20%
+  }
+  .class{
+      margin-left:100%;
   }

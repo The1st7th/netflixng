@@ -12,22 +12,41 @@
   <h1 style = "color: azure">New Movies Available</h1>
   <button type ="button" class="btn btn-danger ">Movie List</button>
 </div>
-</div>
+</div> 
 </div>
 <!-- component 2 -->
 <div class ="middle">
+<div class = "container" >
+<div class="midicons" (click)= select($event) id= "1">
+  <img class = "icon" src="assets/images/key.svg" alt="">
+  <h6 class = "text selected" style="color:antiquewhite">   Cancel any time</h6>
+</div>
+<div class ="midicons "(click)= select($event) id= "2">
+  <img class = "icon" src="assets/images/icon_devices.png" alt="">
+  <h6 class = "text nonselected" style="color:antiquewhite">Watch on any devices</h6>
+</div>
+<div class ="midicons nonselected"(click)= select($event) id="3">
+  <img class = "icon" src="assets/images/price-tag.svg" alt="">
+  <h6 class = "text nonselected" style="color:antiquewhite">Pick our price</h6>
+</div>
+</div>
+</div>
+<!-- component 3 -->
+<!-- ngif -->
+<!-- <div class="middle">
 <div class = "container">
-<div class="middle0" >
-  <img class = "icon" src="assets/images/cancel.svg" alt="">
-  <h6 class = "text" style="color:antiquewhite">Cancel</h6>
+  <div><span style="color:aliceblue">If you decide Netflix isn't for you - no problem. No commitment. Cancel online anytime.</span>
+    <br>
+  <button type ="button" class="btn btn-danger " style="margin-top:10%">JOIN FREE FOR A MONTH</button>
+  </div>
+  <div><img src="assets/images/asset_cancelanytime_withdevice.png" alt="" style ="width:420px;height:298px;"></div>
 </div>
-<div class ="middle1" >
-  <img class = "icon" src="assets/images/icon_devices.png" alt="">
-  <h6 class = "text" style="color:antiquewhite">Watch on any devices</h6>
-</div>
-<div class ="middle2" >
-  <img class = "icon" src="assets/images/icon_devices.png" alt="">
-  <h6 class = "text" style="color:antiquewhite">Watch on any devices</h6>
-</div>
-</div>
-</div>
+</div> -->
+<!-- ngif -->
+<div class="middle">
+    <div class = "container">
+      <div style="display:inline-block"><span style="color:aliceblue; width:100%">Watch TV shows and movies anytime, anywhere — personalized for you.</span></div>
+
+     <div style="display:inline-block;"> <button type ="button" class="btn btn-danger 1" style="margin-top:10%; float:right; margin-top:0px">JOIN FREE FOR A MONTH</button></div>
+    </div>
+    <div>
