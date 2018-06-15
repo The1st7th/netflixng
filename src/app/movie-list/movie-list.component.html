@@ -1,8 +1,17 @@
-<div style="background-color: black" class="card" style="width: 18rem;">
-  <img class="card-img-top" src="assets\images\asset_cancelanytime_withdevice.png" alt="Card image cap">
+<div *ngIf="topmovies" style="background-color: black">
+    <div class="container">
+        <div class="row">
+<div *ngFor="let movie of topmovies">
+ <div class="col-md-3">
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" alt="Card image cap">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <h5 class="card-title">{{movie.title}}</h5>
+    <p class="card-text">{{movie.overview}}</p>
+    <a href="#" class="btn btn-primary">ADD to favorites</a>
   </div>
+</div>
+/</div>
+</div>
+</div>
 </div>
