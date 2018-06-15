@@ -1,1 +1,86 @@
 /* You can add global styles to this file, and also import other style files */
+.main {
+    background-color: rgb(34, 172, 252);
+    background-image: url("https://hdqwalls.com/wallpapers/altered-carbon-netflix-tv-series-2018-5c.jpg");
+    height: 500px;
+    width: 100%;
+    background-size: contain;
+}
+.netflix {
+     width: 20%;
+     height:80px;
+     margin-left: 2%;
+     margin-top:2%;
+     
+}
+.right{
+   float: right;
+   margin-right: 2%;
+   margin-top:2%;
+   
+
+}
+.newmovies{
+    margin-left: 10%;
+    margin-top:10%;
+}
+
+/*  */
+
+.middle{
+    background:black;
+    width:100%;
+    height:300px;
+}
+
+.icon{
+    height: 30%;
+    width:20%;
+    margin-top:5%;
+    margin-left: 30%;
+}
+.text{
+
+    height: 10%;
+    width:100%;
+    margin-top:10%;
+    margin-left: 22%;
+    margin-bottom:20%;
+}
+
+.container {
+    display: flex;
+    background:black;
+    width: 100%;
+    justify-content: space-between;
+  
+  }
+  .container > div {
+    flex: 1;
+    justify-content: flex-start;
+    margin-left:auto;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .selected{
+      font-weight: bold;
+      border-bottom: 5px solid red;
+  }
+
+  span{
+      display:inline-block;
+      
+      width: 70%;
+  }
+  .h6{
+      padding-bottom: 20%
+  }
+  .class{
+      margin-left:100%;
+  }
+  .middle1{
+    background:black;
+    width:100%;
+    height:500px;
+}

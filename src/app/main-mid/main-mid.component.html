@@ -1,0 +1,41 @@
+<div class ="middle">
+  <div class = "container" >
+  <div class="midicons" (click)= select($event) id= "1">
+    <img class = "icon" src="assets/images/key.svg" alt="">
+    <h6 class = "text selected" style="color:antiquewhite">   Cancel any time</h6>
+  </div>
+  <div class ="midicons "(click)= select($event) id= "2">
+    <img class = "icon" src="assets/images/icon_devices.png" alt="">
+    <h6 class = "text nonselected" style="color:antiquewhite">Watch on any devices</h6>
+  </div>
+  <div class ="midicons nonselected"(click)= select($event) id="3">
+    <img class = "icon" src="assets/images/price-tag.svg" alt="">
+    <h6 class = "text nonselected" style="color:antiquewhite">Pick our price</h6>
+  </div>
+  </div>
+  </div>
+<!-- ngif -->
+<div [ngSwitch]=nid>
+  <div *ngSwitchCase=1>
+  <div>
+    <img style="width:100%" src="assets\images\watchanywhere.png" alt="">
+  </div>
+</div>
+<div *ngSwitchCase=2>
+  <div>
+    <img style="width:100%" src="assets\images\plan.png" alt="">
+  </div>
+
+</div>
+<div *ngSwitchCase=3>
+  <div>
+    <img style="width:100%" src="assets\images\cancelany.png" alt="">
+  </div>
+</div>
+</div>
+
+<!-- <ANY ng-switch="expression">
+  <ANY ng-switch-when="matchValue1">...</ANY>
+  <ANY ng-switch-when="matchValue2">...</ANY>
+  <ANY ng-switch-default>...</ANY>
+</ANY> -->
