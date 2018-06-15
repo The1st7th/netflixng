@@ -4,7 +4,7 @@ import { MovieListComponent } from './movie-list/movie-list.component';
 import { MainPageComponent } from './main-page/main-page.component';
 
 const appRoutes: Routes = [ {
-    path:'',
+    path:'main',
     component: MainPageComponent
 },
 {

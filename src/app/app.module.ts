@@ -7,6 +7,7 @@ import { MainFooterComponent } from './main-footer/main-footer.component';
 import { MovieListComponent } from './movie-list/movie-list.component';
 import {routing} from './app.routing';
 import { MainPageComponent } from './main-page/main-page.component';
+import { HttpModule } from '@angular/http';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { MainPageComponent } from './main-page/main-page.component';
   ],
   imports: [
     BrowserModule,
-    routing
+    routing,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
