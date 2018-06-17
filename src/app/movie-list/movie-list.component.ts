@@ -1,15 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import { Http, Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
+import { Movie } from '../movie.model';
+import {MovieService} from '../movie.service'
 
 @Component({
   selector: 'app-movie-list',
   templateUrl: './movie-list.component.html',
-  styleUrls: ['./movie-list.component.css']
+  styleUrls: ['./movie-list.component.css'],
+  providers:[MovieService]
 })
 export class MovieListComponent implements OnInit {
   topmovies= null;
-  constructor(private http: Http) { }
+  constructor(private http: Http, private MovieService:MovieService) { }
 
   ngOnInit() {
   this.getmovies();
@@ -22,4 +25,11 @@ export class MovieListComponent implements OnInit {
     console.log(this.topmovies);
 });
   }
+addfav(title:string, poster:string, overview:string){
+  console.log(title);
+  console.log(poster);
+  console.log(overview);
+  var newfav: Movie = new Movie(title,poster,overview);
+  this.MovieService.addfavorite(newfav);
+}
 }

@@ -8,8 +8,16 @@ import { MovieListComponent } from './movie-list/movie-list.component';
 import {routing} from './app.routing';
 import { MainPageComponent } from './main-page/main-page.component';
 import { HttpModule } from '@angular/http';
-
-
+import { FavoriteListComponent } from './favorite-list/favorite-list.component';
+import { masterFirebaseConfig } from './apikeys';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+export const firebaseConfig = {
+  apiKey: masterFirebaseConfig.apiKey,
+  authDomain: masterFirebaseConfig.authDomain,
+  databaseURL: masterFirebaseConfig.databaseURL,
+  storageBucket: masterFirebaseConfig.storageBucket
+};
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,12 +25,15 @@ import { HttpModule } from '@angular/http';
     MainMidComponent,
     MainFooterComponent,
     MovieListComponent,
-    MainPageComponent
+    MainPageComponent,
+    FavoriteListComponent
   ],
   imports: [
     BrowserModule,
     routing,
-    HttpModule
+    HttpModule,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]
