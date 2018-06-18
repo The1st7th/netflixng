@@ -1,4 +1,6 @@
-# Website
+# Netlix Website
+
+this webiste is an attempt replication of netflix. It list a movie from themoviedb, and permits a user to save a movie, delete and update his favorite list.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
