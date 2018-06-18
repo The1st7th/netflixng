@@ -15,4 +15,8 @@ export class MainTopComponent implements OnInit {
 moveto(){
   this.router.navigate(['list'])
 }
+movetofav(){
+  this.router.navigate(['favorite'])
+}
+
 }

@@ -12,4 +12,15 @@ export class MovieService {
   addfavorite(newfav:Movie){
      this.favoritemovies.push(newfav);
    }
+  getfav(){
+    return this.favoritemovies;
+  }
+  getmoviebyid(movieid: number)
+  {
+    return this.database.object('favorite/' + movieid);
+  }
+  deleteFav(todelete){
+    var albumEntryInFirebase = this.getmoviebyid(todelete.$key);
+    albumEntryInFirebase.remove();
+  }
 }

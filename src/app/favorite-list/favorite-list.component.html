@@ -1,3 +1,17 @@
-<p>
-  favorite-list works!
-</p>
+<div *ngIf="fm" style="background-color: black">
+  <div class="container">
+      <div class="row">
+<div *ngFor="let movie of fm | async">
+<div class="col-md-3">
+<div class="card" style="width: 18rem;">
+<img class="card-img-top" src="https://image.tmdb.org/t/p/w500{{movie.poster}}" alt="Card image cap">
+<div class="card-body">
+  <h5 class="card-title">{{movie.title}}</h5>
+  <p class="card-text">{{movie.overview}}</p>
+  <button (click)="deletefav(movie)" class="btn btn-primary">delete</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
