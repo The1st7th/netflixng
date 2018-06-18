@@ -23,4 +23,10 @@ export class MovieService {
     var albumEntryInFirebase = this.getmoviebyid(todelete.$key);
     albumEntryInFirebase.remove();
   }
+  updatefav(movie){
+ var thisonetoupdate = this.getmoviebyid(movie.$key);
+ thisonetoupdate.update({title: movie.title,
+  poster: movie.poster,
+  overview: movie.overview});
+  }
 }

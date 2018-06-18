@@ -1,0 +1,14 @@
+<div *ngIf="selectedmovie" style="background-color: black">
+<h4>Edit Movie</h4>
+<label>New Movie Title:</label>
+<input [(ngModel)]="selectedmovie.title">
+<br>
+
+<label>New movie image:</label>
+<input [(ngModel)]="selectedmovie.poster">
+<br>
+
+<label>New Album overview:</label>
+<input [(ngModel)]="selectedmovie.overview">
+<button (click)="updatemovie(selectedmovie)">Update</button>
+</div>

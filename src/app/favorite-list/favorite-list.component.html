@@ -9,9 +9,12 @@
   <h5 class="card-title">{{movie.title}}</h5>
   <p class="card-text">{{movie.overview}}</p>
   <button (click)="deletefav(movie)" class="btn btn-primary">delete</button>
+  <button (click)="toupdate(movie)" class="btn btn-primary">update</button>
+
 </div>
 </div>
 </div>
 </div>
 </div>
+<app-edit-movie [selectedmovie] = 'selected'></app-edit-movie>
 </div>

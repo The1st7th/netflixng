@@ -12,6 +12,8 @@ import { FavoriteListComponent } from './favorite-list/favorite-list.component';
 import { masterFirebaseConfig } from './apikeys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { EditMovieComponent } from './edit-movie/edit-movie.component';
+import { FormsModule } from '@angular/forms';
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
   authDomain: masterFirebaseConfig.authDomain,
@@ -26,14 +28,17 @@ export const firebaseConfig = {
     MainFooterComponent,
     MovieListComponent,
     MainPageComponent,
-    FavoriteListComponent
+    FavoriteListComponent,
+    EditMovieComponent
   ],
   imports: [
     BrowserModule,
     routing,
     HttpModule,
     AngularFireModule.initializeApp(firebaseConfig),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    FormsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

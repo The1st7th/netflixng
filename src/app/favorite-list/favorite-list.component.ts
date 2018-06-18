@@ -12,6 +12,7 @@ import { FirebaseListObservable } from 'angularfire2/database';
   providers:[MovieService]
 })
 export class FavoriteListComponent implements OnInit {
+  selected = null;
   fm:FirebaseListObservable<any[]>;
   constructor(private movieservice: MovieService) { }
 
@@ -23,5 +24,8 @@ export class FavoriteListComponent implements OnInit {
     console.log(todelete);
     this.movieservice.deleteFav(todelete);
   }
-
+  toupdate(movie){
+    console.log(movie);
+    this.selected = movie;
+  }
 }
